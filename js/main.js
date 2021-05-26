@@ -1,17 +1,4 @@
 $(document).ready(function () {
-    $('#All').click(function () { 
-        // $('.item').removeClass('-nono');
-    });
-    $('#Package').click(function () { 
-        // $('.package').addClass('-nono');
-    });
-    $('#Web').click(function () { 
-        // alert($('.container div').hasClass('package'));
-        // window.setTimeout('location.reload()', 0);
-        // $('.container div').show('.web');
-        // $('.container div').remove('.package');
-        
-    });
 
     // 點擊返回頂部
     $(function() {
