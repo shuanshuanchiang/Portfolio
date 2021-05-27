@@ -28,6 +28,7 @@
 }
 
 body{
+    font-family: 'Noto Sans TC', sans-serif;
     display: flex;
     justify-content: flex-end;
     color: #333;
@@ -272,6 +273,7 @@ h2{
 @media screen and (max-width: 767px) {
     .container{
         margin: 0 auto;
+        width: 90%;
     }
 
     header{
@@ -322,7 +324,9 @@ h2{
         padding-top: 90px;
     }
 
-
+    .item {
+        width: 100%;
+    }
 
     .item_introduction{
         width: 95vw;
