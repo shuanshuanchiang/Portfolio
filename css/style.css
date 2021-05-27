@@ -55,6 +55,7 @@ header ul{
     margin: 0 auto;
     text-align: center;
     cursor: pointer;
+    color: #999;
 }
 
 header ol{
@@ -66,10 +67,6 @@ header ol{
 header ul li{
     list-style: none;
     line-height: 40px;
-}
-
-nav{
-    position: relative;
 }
 
 nav>img{
@@ -127,7 +124,7 @@ nav>img{
 
 section{
     width: 80vw;
-    height: 100vh;
+    height: auto;
     background: #eeebeb;
     padding-top: 40px;
 }  
@@ -266,6 +263,9 @@ h2{
 .-open{
     display: block;
 }
+.-this{
+    color: #333;
+}
 
 
 
@@ -285,12 +285,12 @@ h2{
         position: absolute;
         top: 0;
         right: -100vw;
-        width: 100vw;
+        width: 70vw;
         height: 100vh;
         padding: 20vw 0;
         background: #eeebeb;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-direction: column;
         transition: .6s;
     }

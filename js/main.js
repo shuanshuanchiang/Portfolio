@@ -21,6 +21,12 @@ $(document).ready(function () {
         $('.outer').removeClass('-nono');
         $('.inner').removeClass('-open');
     });
+    $('.filters_btn li').click(function () {
+        $(this).addClass('-this');
+        $(this).siblings().removeClass('-this');
+        
+        
+    });
     
 });
 
