@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-    // 點擊返回頂部
     $(function() {
         $('.gotop').click(function() {
             $('body,html').animate({
