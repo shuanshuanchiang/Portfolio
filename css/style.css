@@ -68,6 +68,10 @@ header ul li{
     line-height: 40px;
 }
 
+nav{
+    position: relative;
+}
+
 nav>img{
     width: 120px;
     display: block;
