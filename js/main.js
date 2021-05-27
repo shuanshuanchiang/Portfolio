@@ -33,6 +33,32 @@ var Filter = 0;
 
 var inner_txt =[
     {
+        tag:2,
+        mark:'web design',
+        h2:'個人網站 | TOAST bakery網頁設計',
+        date:'2020.12',
+        tit:'TOAST bakery | LOGO、網站視覺、全頁面 | <a href="https://succulentsplant.net/main.html" style="color: cornflowerblue;"> 前往網站</a>',
+        count:1,
+        image:[
+            "./img/project_020_1.png",
+        ],
+    },
+    {
+        tag:2,
+        mark:'web design',
+        h2:'團體網站 | 肉多不怪電商網站',
+        date:'2021.3',
+        tit:'肉多不怪 | LOGO、網站視覺、首頁、QA、客製頁面、心理測驗、動畫特效 | <a href="https://succulentsplant.net/main.html" style="color: cornflowerblue;"> 前往網站</a>',
+        count:5,
+        image:[
+            "./img/project_021_1.png",
+            "./img/project_021_2.png",
+            "./img/project_021_3.png",
+            "./img/project_021_4.png",
+            "./img/project_021_5.png",
+        ],
+    },
+    {
         tag:1,
         mark:'package design',
         h2:'Kotex | 輕柔棉聯名包裝',
@@ -49,13 +75,15 @@ var inner_txt =[
     {
         tag:1,
         mark:'package design',
-        h2:'Kleenex | 溫和柔感面紙',
-        date:'2020.04',
-        tit:'舒潔 | 包裝設計、立體圖',
-        count:2,
+        h2:'Kleenex | 迪士尼聯名-奧運應援包',
+        date:'2010.03',
+        tit:'舒潔Ｘ迪士尼聯名X奧運應援包 | 主視覺、包裝設計、立體圖',
+        count:4,
         image:[
-            "./img/project_023_1.png",
-            "./img/project_023_2.png",
+            "./img/project_02_1.png",
+            "./img/project_02_2.png",
+            "./img/project_02_3.png",
+            "./img/project_02_4.png"
         ],
     },
     {
@@ -71,20 +99,6 @@ var inner_txt =[
             "./img/project_03_3.png",
             "./img/project_03_4.png",
             "./img/project_03_5.png"
-        ],
-    },
-    {
-        tag:1,
-        mark:'package design',
-        h2:'Kleenex | 迪士尼聯名-奧運應援包',
-        date:'2010.03',
-        tit:'舒潔Ｘ迪士尼聯名X奧運應援包 | 主視覺、包裝設計、立體圖',
-        count:4,
-        image:[
-            "./img/project_02_1.png",
-            "./img/project_02_2.png",
-            "./img/project_02_3.png",
-            "./img/project_02_4.png"
         ],
     },
     {
@@ -295,62 +309,62 @@ var inner_txt =[
 
 
 /*----------------------   選單點擊後內容切換  -----------------------*/
-/*var All = document.getElementById("All");
-All.addEventListener('click',function(){
-    Filter = 0;
-    ViewFilter();
-}); 
-var Package = document.getElementById("Package");
-Package.addEventListener('click',function(){
-    Filter = 1;
-    ViewFilter();
-}); 
-var Web = document.getElementById("Web");
-Web.addEventListener('click',function(){
-    Filter = 2;
-    ViewFilter();
-}); 
+// var All = document.getElementById("All");
+// All.addEventListener('click',function(){
+//     Filter = 0;
+//     ViewFilter();
+// }); 
+// var Package = document.getElementById("Package");
+// Package.addEventListener('click',function(){
+//     Filter = 1;
+//     ViewFilter();
+// }); 
+// var Web = document.getElementById("Web");
+// Web.addEventListener('click',function(){
+//     Filter = 2;
+//     ViewFilter();
+// }); 
 
-function ViewFilter()
-{
-    for(let i=0;i<inner_txt.length;++i)
-    {
-        let removeImg = document.querySelector(".item");
-        if(removeImg)
-        document.getElementsByClassName("container")[0].removeChild(removeImg);
-    }
+// function ViewFilter()
+// {
+//     for(let i=0;i<inner_txt.length;++i)
+//     {
+//         let removeImg = document.querySelector(".item");
+//         if(removeImg)
+//         document.getElementsByClassName("container")[0].removeChild(removeImg);
+//     }
 
-    for(let i=0;i<inner_txt.length;++i)
-    {
-        if(Filter == inner_txt[i].tag || Filter == 0)
-        {
-            node=document.createElement("div");
-            node.className = "item";
+//     for(let i=0;i<inner_txt.length;++i)
+//     {
+//         if(Filter == inner_txt[i].tag || Filter == 0)
+//         {
+//             node=document.createElement("div");
+//             node.className = "item";
 
-            let node1=document.createElement("img");
-            let tmp = i+1;
-            if(tmp!=11)
-            node1.srcset = "./img/project_0"+tmp+".png";
-            else
-            node1.srcset = "./img/project_0"+tmp+".gif";
-            node.appendChild(node1);
+//             let node1=document.createElement("img");
+//             let tmp = i+1;
+//             if(tmp!=11)
+//             node1.srcset = "./img/project_0"+tmp+".png";
+//             else
+//             node1.srcset = "./img/project_0"+tmp+".gif";
+//             node.appendChild(node1);
 
-            let node2=document.createElement("mark");
-            node2.innerText = inner_txt[i].mark;
-            node.appendChild(node2);
+//             let node2=document.createElement("mark");
+//             node2.innerText = inner_txt[i].mark;
+//             node.appendChild(node2);
 
-            node2=document.createElement("h1");
-            node2.innerText = inner_txt[i].h2;
-            node.appendChild(node2);
+//             node2=document.createElement("h1");
+//             node2.innerText = inner_txt[i].h2;
+//             node.appendChild(node2);
 
-            node2=document.createElement("time");
-            node2.innerText = inner_txt[i].date;
-            node.appendChild(node2);
+//             node2=document.createElement("time");
+//             node2.innerText = inner_txt[i].date;
+//             node.appendChild(node2);
 
-            document.getElementsByClassName("container")[0].appendChild(node);
-        }
-    } 
-}*/
+//             document.getElementsByClassName("container")[0].appendChild(node);
+//         }
+//     } 
+// }
 
 
 /*----------------------作品點擊後進入內頁----------------------*/

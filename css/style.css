@@ -64,6 +64,7 @@ header ol{
 }
 
 header ul li{
+    list-style: none;
     line-height: 40px;
 }
 
@@ -122,14 +123,14 @@ nav>img{
 
 section{
     width: 80vw;
+    height: 100vh;
     background: #eeebeb;
     padding-top: 40px;
 }  
 
-
-.container ,.container {
+/* .container{
     margin: 0 auto;
-}
+} */
         
 .container:after {
     content: '';
@@ -265,6 +266,10 @@ h2{
 
 
 @media screen and (max-width: 767px) {
+    /* .container{
+        width: 90%;
+        margin: 0 auto;
+    } */
 
     header{
         width: 100vw;
@@ -310,6 +315,7 @@ h2{
 
     section{
         width: 100vw;
+        height: 100%;
         padding-top: 90px;
     }
 
