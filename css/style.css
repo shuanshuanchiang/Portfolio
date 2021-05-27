@@ -129,9 +129,9 @@ section{
     padding-top: 40px;
 }  
 
-/* .container{
-    margin: 0 auto;
-} */
+.container{
+    margin: 0;
+}
         
 .container:after {
     content: '';
@@ -270,10 +270,9 @@ h2{
 
 
 @media screen and (max-width: 767px) {
-    /* .container{
-        width: 90%;
+    .container{
         margin: 0 auto;
-    } */
+    }
 
     header{
         width: 100vw;
