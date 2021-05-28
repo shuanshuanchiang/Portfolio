@@ -327,8 +327,6 @@ h2{
 
     .item {
         width: 100%;
-       
-
     }
 
     .item_introduction{
@@ -342,11 +340,7 @@ h2{
     .back,.gotop{
         right: 20px;
     }
-    .inner{
-       position: fixed;
-       height: 100%;
-       overflow: auto;
-    }
+    
     
     
     
