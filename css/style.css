@@ -125,6 +125,7 @@ nav>img{
 
 section{
     width: 80vw;
+    min-height: 100vh;
     height: auto;
     background: #eeebeb;
     padding-top: 40px;

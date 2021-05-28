@@ -80,6 +80,18 @@ var inner_txt =[
     {
         tag:1,
         mark:'package design',
+        h2:'Kleenex | 溫和柔感面紙',
+        date:'2020.04',
+        tit:'舒潔 | 包裝設計、立體圖',
+        count:2,
+        image:[
+            "./img/project_023_1.png",
+            "./img/project_023_2.png",
+        ],
+    },
+    {
+        tag:1,
+        mark:'package design',
         h2:'Kleenex | 迪士尼聯名-奧運應援包',
         date:'2010.03',
         tit:'舒潔Ｘ迪士尼聯名X奧運應援包 | 主視覺、包裝設計、立體圖',
