@@ -275,9 +275,6 @@ h2{
     .container{
         margin: 0 auto;
         width: 90%;
-        position: fixed;
-        height: 100%;
-        overflow: auto;
     }
 
     header{
@@ -345,7 +342,11 @@ h2{
     .back,.gotop{
         right: 20px;
     }
-    
+    .inner{
+       position: fixed;
+       height: 100%;
+       overflow: auto;
+    }
     
     
     
