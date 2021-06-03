@@ -221,7 +221,7 @@ var inner_txt =[
         h2:'Huggies | PChome旗艦店網頁設計',
         date:'2020.06',
         tit:'好奇ＸPChome旗艦店 | 網頁設計、廣告banner',
-        count:3,
+        count:2,
         image:[
             "./img/project_011.gif",
             "./img/project_011_2.jpg",
