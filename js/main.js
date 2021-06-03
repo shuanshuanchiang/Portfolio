@@ -10,20 +10,20 @@ $(document).ready(function () {
 
     // 選單內外頁切換
     $('.item').click(function () { 
-        $('.outer').addClass('-nono');
-        $('.inner').addClass('-open');
+        // $('.outer').addClass('-nono');
+        $('.inner').removeClass('fade-leave-to').addClass('fade-enter-to');
     });
-    $('nav').click(function () { 
-        $('.outer').removeClass('-nono');
-        $('.inner').removeClass('-open');
-    });
+    // $('nav').click(function () { 
+    //     $('.outer').removeClass('-nono');
+    //     $('.inner').removeClass('-open');
+    // });
     $('.back').click(function () { 
-        $('.outer').removeClass('-nono');
-        $('.inner').removeClass('-open');
+        // $('.outer').removeClass('-nono');
+        $('.inner').removeClass('fade-enter-to').addClass('fade-leave-to');
     });
     $('.filters_btn li').click(function () {
-        $(this).addClass('-this');
-        $(this).siblings().removeClass('-this');
+       
+        $(this).addClass('-this').siblings().removeClass('-this');
         
         
     });
@@ -67,7 +67,7 @@ var inner_txt =[
         tag:1,
         mark:'package design',
         h2:'Kotex | 輕柔棉聯名包裝',
-        date:'2010.02',
+        date:'2019.09',
         tit:'靠得住Ｘ宇宙人聯名 | 主視覺、包裝設計、棉片袋設計、贈品設計、立體圖',
         count:4,
         image:[
@@ -93,7 +93,7 @@ var inner_txt =[
         tag:1,
         mark:'package design',
         h2:'Kleenex | 迪士尼聯名-奧運應援包',
-        date:'2010.03',
+        date:'2020.05',
         tit:'舒潔Ｘ迪士尼聯名X奧運應援包 | 主視覺、包裝設計、立體圖',
         count:4,
         image:[
@@ -104,10 +104,21 @@ var inner_txt =[
         ],
     },
     {
+        tag:2,
+        mark:'web design',
+        h2:'MUJI無印良品 | 木製沙發特企',
+        date:'2021.3',
+        tit:'MUJI無印良品 | 網頁設計 | <a href="https://www.books.com.tw/activity/fashion/muji/2021/05/e-3/" style="color: cornflowerblue;"> 前往網站</a>',
+        count:1,
+        image:[
+            "./img/project_024_1.png",
+        ],
+    },
+    {
         tag:1,
         mark:'package design',
         h2:'Kleenex | 玩具總動員聯名包裝',
-        date:'2010.03',
+        date:'2019.04',
         tit:'舒潔Ｘ玩具總動員 | 主視覺、包裝設計(盒面/外袋/袖珍包/紙手帕)、立體圖',
         count:5,
         image:[
@@ -122,7 +133,7 @@ var inner_txt =[
         tag:1,
         mark:'package design',
         h2:'Huggies | 小熊維尼聯名包裝',
-        date:'2010.03',
+        date:'2019.12',
         tit:'好奇Ｘ小熊維尼聯名 | 包裝設計、立體圖',
         count:1,
         image:[
@@ -133,7 +144,7 @@ var inner_txt =[
         tag:2,
         mark:'web design',
         h2:'Huggies | 大樹旗艦店網頁設計',
-        date:'2010.03',
+        date:'2020.03',
         tit:'好奇Ｘ大樹網站視覺設計 | 主視覺、網頁UI/UX、廣告Banner',
         count:4,
         image:[
@@ -147,7 +158,7 @@ var inner_txt =[
         tag:1,
         mark:'package design',
         h2:'Kleenex | 迪士尼XCostco 聯名包裝',
-        date:'2010.03',
+        date:'2019.09',
         tit:'舒潔Ｘ迪士尼XCostco 春季聯名包裝 | 包裝設計、立體圖',
         count:3,
         image:[
@@ -160,7 +171,7 @@ var inner_txt =[
         tag:2,
         mark:'web design',
         h2:'Kleenex | 兒童衛生紙系列EDM',
-        date:'2010.03',
+        date:'2020.05',
         tit:'舒潔Ｘ迪士尼聯名兒童衛生紙系列EDM | 海報設計、網頁設計',
         count:1,
         image:[
@@ -171,7 +182,7 @@ var inner_txt =[
         tag:1,
         mark:'package design',
         h2:'Kotex | 喵掌包主視覺',
-        date:'2010.03',
+        date:'2020.06',
         tit:'靠得住Ｘ喵掌包主視覺 | 主視覺設計',
         count:1,
         image:[
@@ -194,7 +205,7 @@ var inner_txt =[
         tag:2,
         mark:'web design',
         h2:'Kotex | 舒潔夏日EDM',
-        date:'2010.03',
+        date:'2019.08',
         tit:'靠得住Ｘ夏日EDM | 主視覺設計、EDM設計、廣告banner',
         count:1,
         image:[
@@ -205,7 +216,7 @@ var inner_txt =[
         tag:2,
         mark:'web design',
         h2:'Huggies | PChome旗艦店網頁設計',
-        date:'2010.03',
+        date:'2020.06',
         tit:'好奇ＸPChome旗艦店 | 網頁設計、廣告banner',
         count:3,
         image:[
@@ -218,7 +229,7 @@ var inner_txt =[
         tag:1,
         mark:'package design',
         h2:'Huggies | 奇奇蒂蒂聯名包裝',
-        date:'2010.03',
+        date:'2019.05',
         tit:'好奇Ｘ奇奇蒂蒂聯名 | 包裝設計、立體圖',
         count:2,
         image:[
@@ -230,7 +241,7 @@ var inner_txt =[
         tag:1,
         mark:'package design',
         h2:'可麗舒 | 熊熊遇見你聯名包裝',
-        date:'2010.03',
+        date:'2019.10',
         tit:'可麗舒Ｘ奇奇蒂蒂聯名 | 包裝設計、立體圖',
         count:1,
         image:[
@@ -241,7 +252,7 @@ var inner_txt =[
         tag:1,
         mark:'package design',
         h2:'Kotex | TheBodyShop聯名包裝',
-        date:'2010.03',
+        date:'2019.07',
         tit:'靠得住ＸTheBodyShop聯名 | 包裝設計、廣吿banner、立體圖',
         count:2,
         image:[
@@ -253,7 +264,7 @@ var inner_txt =[
         tag:1,
         mark:'package design',
         h2:'Huggies | LINE聯名禮物箱',
-        date:'2010.03',
+        date:'2020.05',
         tit:'好奇ＸLINE | 包裝設計、廣吿banner、立體圖',
         count:1,
         image:[
@@ -264,7 +275,7 @@ var inner_txt =[
         tag:2,
         mark:'web design',
         h2:'博士倫 | LACELLA網頁設計',
-        date:'2010.03',
+        date:'2019.02',
         tit:'博士倫ＸLACELLA | 網頁設計、網站維護',
         count:1,
         image:[
@@ -274,8 +285,8 @@ var inner_txt =[
     {
         tag:2,
         mark:'web design',
-        h2:'Kleenex | 迪士尼X全聯聯名包裝',
-        date:'2010.03',
+        h2:'Kleenex | 迪士尼X全聯限定包裝',
+        date:'2020.02',
         tit:'舒潔Ｘ迪士尼X全聯 聯名包裝 | 包裝設計、立體圖',
         count:2,
         image:[
@@ -287,7 +298,7 @@ var inner_txt =[
         tag:2,
         mark:'web design',
         h2:'Kleenex | 新年企劃EDM',
-        date:'2010.03',
+        date:'2018.09',
         tit:'舒潔Ｘ新年企劃 | 主視覺設計、EDM設計',
         count:2,
         image:[
@@ -299,7 +310,7 @@ var inner_txt =[
         tag:1,
         mark:'package design',
         h2:'Kleenex | 迪士尼聯名-櫻花季',
-        date:'2010.03',
+        date:'2019.12',
         tit:'舒潔Ｘ迪士尼聯名Ｘ櫻花季 | 包裝設計(袖珍包/紙手帕/攜帶型面紙)、外袋設計、立體圖',
         count:4,
         image:[
@@ -313,7 +324,7 @@ var inner_txt =[
         tag:1,
         mark:'package design',
         h2:'曼秀雷敦 | Tsumtsum護唇膏',
-        date:'2010.03',
+        date:'2018.12',
         tit:'曼秀雷敦ＸTsumtsum | 主視覺、包裝設計、立體圖',
         count:2,
         image:[

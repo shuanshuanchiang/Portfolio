@@ -29,7 +29,7 @@
 
 body{
     font-family: 'Noto Sans TC', sans-serif;
-    display: flex;
+    /* display: flex; */
     justify-content: flex-end;
     color: #333;
     font-size: 16px;
@@ -40,7 +40,7 @@ body{
 /* ---- 版型開始 ---- */
 header{
     background: #eeebeb;
-    width: 20vw;
+    width: 20%;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -124,11 +124,14 @@ nav>img{
 }
 
 section{
-    width: 80vw;
+    width: 80%;
     min-height: 100vh;
     height: auto;
     background: #eeebeb;
     padding-top: 40px;
+    /* float: right; */
+    margin-left: 20%;
+    margin-right: 0;
 }  
 
 .container{
@@ -142,20 +145,29 @@ section{
 }
 
 .item {
-    width: 380px;
+    width: 400px;
     height: auto;
     float: left;
-    background: rgba(255,255,255,.5);
+    max-width: 33.3333%;
+    /* background: rgba(255,255,255,.5); */
     border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 0 10px 20px;
+    /* margin-bottom: 20px; */
+    /* transition:  .6s; */
     cursor: pointer;
 }
 
-.item:hover {
+.item:hover .item__inner{
     background: rgba(255,255,255,1);
     box-shadow: 0 0 5px #eeebeb;
+    
+}
+
+.item__inner{
     transition:  .6s;
+    background: rgba(255,255,255,.5);
+    border-radius: 5px;
+    padding: 15px;
 }
 
 img{
@@ -188,13 +200,49 @@ time{
 /* ---- 內頁版型 ---- */
 
 .inner{
-    display: none;
+    /* display: none; */
     background: #fff;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    left:0;
+    top:0;
+    /* opacity: 0; */
+    transform: translateX(100%);
+    transition: opacity 0.6s ease,transform 0.6s ease;
 }
+
+.fade-enter{
+    /* opacity: 0; */
+  
+}
+
+.fade-enter-active{
+  
+}
+
+.fade-enter-to{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.fade-leave{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-leave-active{
+    transition: opacity 0.6s ease,transform 0.6s ease;
+}
+
+.fade-leave-to{
+    /* opacity: 0; */
+    transform: translateX(100%);
+}  
 
 .item_introduction{
     margin: 0 auto;
-    width: 60vw;
+    width: 60%;
 }
 
 .item_introduction p{
@@ -227,11 +275,13 @@ h2{
 
 .back{
     padding: 16px 13px;
+    width: 50px;
     background-color: #eeebeb;
     color: #666;
-    position: fixed;
+    position: sticky;
+    left: 90%;
     bottom: 40px;
-    right: 40px;
+    /* right: 40px; */
     border-radius: 50%;
     cursor: pointer;
     transition: .3s;
@@ -252,7 +302,8 @@ h2{
     border-radius: 50%;
     position: fixed;
     bottom: 40px;
-    right: 40px;
+    left: 80%;
+    /* right: 40px; */
     cursor: pointer;
     font-weight: bold;
 }
@@ -269,13 +320,14 @@ h2{
     color: #333;
 }
 
-
+@media screen and (max-width: 1200px) {
+    .item {
+        width: 50%;      
+        max-width: none;  
+    }
+}
 
 @media screen and (max-width: 767px) {
-    .container{
-        margin: 0 auto;
-        width: 90%;
-    }
 
     header{
         width: 100vw;
@@ -320,17 +372,26 @@ h2{
     }  
 
     section{
-        width: 100vw;
+        width: 100%;
+        margin: 0;
         height: 100%;
         padding-top: 90px;
     }
 
+    .container{
+        margin: 0 auto;
+        width: 90%;
+    }
+
     .item {
         width: 100%;
+        margin: 0 0 20px;
+        /* max-width: none; */
+        
     }
 
     .item_introduction{
-        width: 95vw;
+        width: 95%;
     }
 
     h2{
@@ -338,7 +399,7 @@ h2{
     }
     
     .back,.gotop{
-        right: 20px;
+        left: 85%;
     }
     
     
