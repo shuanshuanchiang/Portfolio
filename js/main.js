@@ -45,7 +45,7 @@ var inner_txt =[
         tit:'TOAST bakery | LOGO、網站視覺、全頁面 | <a href="https://succulentsplant.net/main.html" style="color: cornflowerblue;"> 前往網站</a>',
         count:1,
         image:[
-            "./img/project_020_1.png",
+            "./img/project_020_1.jpg",
         ],
     },
     {
@@ -56,11 +56,11 @@ var inner_txt =[
         tit:'肉多不怪 | LOGO、網站視覺、首頁、QA、客製頁面、心理測驗、動畫特效 | <a href="https://succulentsplant.net/main.html" style="color: cornflowerblue;"> 前往網站</a>',
         count:5,
         image:[
-            "./img/project_021_1.png",
-            "./img/project_021_2.png",
-            "./img/project_021_3.png",
-            "./img/project_021_4.png",
-            "./img/project_021_5.png",
+            "./img/project_021_1.jpg",
+            "./img/project_021_2.jpg",
+            "./img/project_021_3.jpg",
+            "./img/project_021_4.jpg",
+            "./img/project_021_5.jpg",
         ],
     },
     {
@@ -71,10 +71,10 @@ var inner_txt =[
         tit:'靠得住Ｘ宇宙人聯名 | 主視覺、包裝設計、棉片袋設計、贈品設計、立體圖',
         count:4,
         image:[
-            "./img/project_01_1.png",
-            "./img/project_01_2.png",
-            "./img/project_01_3.png",
-            "./img/project_01_4.png"
+            "./img/project_01_1.jpg",
+            "./img/project_01_2.jpg",
+            "./img/project_01_3.jpg",
+            "./img/project_01_4.jpg"
         ],
     },
     {
@@ -85,8 +85,8 @@ var inner_txt =[
         tit:'舒潔 | 包裝設計、立體圖',
         count:2,
         image:[
-            "./img/project_023_1.png",
-            "./img/project_023_2.png",
+            "./img/project_023_1.jpg",
+            "./img/project_023_2.jpg",
         ],
     },
     {
@@ -97,10 +97,10 @@ var inner_txt =[
         tit:'舒潔Ｘ迪士尼聯名X奧運應援包 | 主視覺、包裝設計、立體圖',
         count:4,
         image:[
-            "./img/project_02_1.png",
-            "./img/project_02_2.png",
-            "./img/project_02_3.png",
-            "./img/project_02_4.png"
+            "./img/project_02_1.jpg",
+            "./img/project_02_2.jpg",
+            "./img/project_02_3.jpg",
+            "./img/project_02_4.jpg"
         ],
     },
     {
@@ -111,7 +111,7 @@ var inner_txt =[
         tit:'MUJI無印良品 | 網頁設計 | <a href="https://www.books.com.tw/activity/fashion/muji/2021/05/e-3/" style="color: cornflowerblue;"> 前往網站</a>',
         count:1,
         image:[
-            "./img/project_024_1.png",
+            "./img/project_024_1.jpg",
         ],
     },
     {
@@ -122,11 +122,11 @@ var inner_txt =[
         tit:'舒潔Ｘ玩具總動員 | 主視覺、包裝設計(盒面/外袋/袖珍包/紙手帕)、立體圖',
         count:5,
         image:[
-            "./img/project_03_1.png",
-            "./img/project_03_2.png",
-            "./img/project_03_3.png",
-            "./img/project_03_4.png",
-            "./img/project_03_5.png"
+            "./img/project_03_1.jpg",
+            "./img/project_03_2.jpg",
+            "./img/project_03_3.jpg",
+            "./img/project_03_4.jpg",
+            "./img/project_03_5.jpg"
         ],
     },
     {
@@ -137,7 +137,7 @@ var inner_txt =[
         tit:'好奇Ｘ小熊維尼聯名 | 包裝設計、立體圖',
         count:1,
         image:[
-            "./img/project_04_1.png"
+            "./img/project_04_1.jpg"
         ],
     },
     {
@@ -148,10 +148,10 @@ var inner_txt =[
         tit:'好奇Ｘ大樹網站視覺設計 | 主視覺、網頁UI/UX、廣告Banner',
         count:4,
         image:[
-            "./img/project_05_1.png",
-            "./img/project_05_2.png",
-            "./img/project_05_3.png",
-            "./img/project_05_4.png"
+            "./img/project_05_1.jpg",
+            "./img/project_05_2.jpg",
+            "./img/project_05_3.jpg",
+            "./img/project_05_4.jpg"
         ],
     },
     {
@@ -162,9 +162,9 @@ var inner_txt =[
         tit:'舒潔Ｘ迪士尼XCostco 春季聯名包裝 | 包裝設計、立體圖',
         count:3,
         image:[
-            "./img/project_06_1.png",
-            "./img/project_06_2.png",
-            "./img/project_06_3.png",
+            "./img/project_06_1.jpg",
+            "./img/project_06_2.jpg",
+            "./img/project_06_3.jpg",
         ],
     },
     {
@@ -172,10 +172,11 @@ var inner_txt =[
         mark:'web design',
         h2:'Kleenex | 兒童衛生紙系列EDM',
         date:'2020.05',
-        tit:'舒潔Ｘ迪士尼聯名兒童衛生紙系列EDM | 海報設計、網頁設計',
-        count:1,
+        tit:'舒潔Ｘ迪士尼聯名兒童衛生紙系列EDM | 海報設計、EDM設計',
+        count:2,
         image:[
-            "./img/project_07_1.png"
+            "./img/project_07_1.jpg",
+            "./img/project_07_2.jpg"
         ],
     },
     {
@@ -186,7 +187,7 @@ var inner_txt =[
         tit:'靠得住Ｘ喵掌包主視覺 | 主視覺設計',
         count:1,
         image:[
-            "./img/project_08_1.png"
+            "./img/project_08_1.jpg"
         ],
     },
     {
@@ -197,8 +198,8 @@ var inner_txt =[
         tit:'舒潔Ｘ迪士尼XCostco 春季聯名包裝 | 包裝設計、外袋設計、立體圖',
         count:2,
         image:[
-            "./img/project_09_1.png",
-            "./img/project_09_2.png",
+            "./img/project_09_1.jpg",
+            "./img/project_09_2.jpg",
         ],
     },
     {
@@ -207,9 +208,11 @@ var inner_txt =[
         h2:'Kotex | 舒潔夏日EDM',
         date:'2019.08',
         tit:'靠得住Ｘ夏日EDM | 主視覺設計、EDM設計、廣告banner',
-        count:1,
+        count:3,
         image:[
-            "./img/project_010_1.png",
+            "./img/project_010_1.jpg",
+            "./img/project_010_2.jpg",
+            "./img/project_010_3.jpg",
         ],
     },
     {
@@ -220,9 +223,8 @@ var inner_txt =[
         tit:'好奇ＸPChome旗艦店 | 網頁設計、廣告banner',
         count:3,
         image:[
-            "./img/project_011_1.png",
-            "./img/project_011_2.png",
-            "./img/project_011_3.png"
+            "./img/project_011.gif",
+            "./img/project_011_2.jpg",
         ],
     },
     {
@@ -233,8 +235,8 @@ var inner_txt =[
         tit:'好奇Ｘ奇奇蒂蒂聯名 | 包裝設計、立體圖',
         count:2,
         image:[
-            "./img/project_012_1.png",
-            "./img/project_012_2.png"
+            "./img/project_012_1.jpg",
+            "./img/project_012_2.jpg"
         ],
     },
     {
@@ -245,7 +247,7 @@ var inner_txt =[
         tit:'可麗舒Ｘ奇奇蒂蒂聯名 | 包裝設計、立體圖',
         count:1,
         image:[
-            "./img/project_013_1.png"
+            "./img/project_013_1.jpg"
         ],
     },
     {
@@ -256,8 +258,8 @@ var inner_txt =[
         tit:'靠得住ＸTheBodyShop聯名 | 包裝設計、廣吿banner、立體圖',
         count:2,
         image:[
-            "./img/project_014_1.png",
-            "./img/project_014_2.png"
+            "./img/project_014_1.jpg",
+            "./img/project_014_2.jpg"
         ],
     },
     {
@@ -268,7 +270,7 @@ var inner_txt =[
         tit:'好奇ＸLINE | 包裝設計、廣吿banner、立體圖',
         count:1,
         image:[
-            "./img/project_015_1.png"
+            "./img/project_015_1.jpg"
         ],
     },
     {
@@ -277,9 +279,10 @@ var inner_txt =[
         h2:'博士倫 | LACELLA網頁設計',
         date:'2019.02',
         tit:'博士倫ＸLACELLA | 網頁設計、網站維護',
-        count:1,
+        count:2,
         image:[
-            "./img/project_016_1.png"
+            "./img/project_016_1.jpg",
+            "./img/project_016_2.jpg"
         ],
     },
     {
@@ -290,8 +293,8 @@ var inner_txt =[
         tit:'舒潔Ｘ迪士尼X全聯 聯名包裝 | 包裝設計、立體圖',
         count:2,
         image:[
-            "./img/project_017_1.png",
-            "./img/project_017_2.png"
+            "./img/project_017_1.jpg",
+            "./img/project_017_2.jpg"
         ],
     },
     {
@@ -302,8 +305,8 @@ var inner_txt =[
         tit:'舒潔Ｘ新年企劃 | 主視覺設計、EDM設計',
         count:2,
         image:[
-            "./img/project_018_1.png",
-            "./img/project_018_2.png"
+            "./img/project_018_1.jpg",
+            "./img/project_018_2.jpg"
         ],
     },
     {
@@ -314,10 +317,10 @@ var inner_txt =[
         tit:'舒潔Ｘ迪士尼聯名Ｘ櫻花季 | 包裝設計(袖珍包/紙手帕/攜帶型面紙)、外袋設計、立體圖',
         count:4,
         image:[
-            "./img/project_019_1.png",
-            "./img/project_019_2.png",
-            "./img/project_019_3.png",
-            "./img/project_019_4.png",
+            "./img/project_019_1.jpg",
+            "./img/project_019_2.jpg",
+            "./img/project_019_3.jpg",
+            "./img/project_019_4.jpg",
         ],
     },
     {
@@ -328,8 +331,8 @@ var inner_txt =[
         tit:'曼秀雷敦ＸTsumtsum | 主視覺、包裝設計、立體圖',
         count:2,
         image:[
-            "./img/project_022_1.png",
-            "./img/project_022_2.png",
+            "./img/project_022_1.jpg",
+            "./img/project_022_2.jpg",
         ],
     },
 ];
