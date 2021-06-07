@@ -7,24 +7,21 @@ $(document).ready(function () {
             }, 600);
         })
     });
+    $('.ham').click(function () {
+        $(this).toggleClass('-close');
+        $('header ul').toggleClass('-show');
+    });
 
-    // 選單內外頁切換
     $('.item').click(function () { 
-        // $('.outer').addClass('-nono');
         $('.inner').removeClass('fade-leave-to').addClass('fade-enter-to');
     });
-    // $('nav').click(function () { 
-    //     $('.outer').removeClass('-nono');
-    //     $('.inner').removeClass('-open');
-    // });
+
     $('.back').click(function () { 
-        // $('.outer').removeClass('-nono');
         $('.inner').removeClass('fade-enter-to').addClass('fade-leave-to');
     });
+
     $('.filters_btn li').click(function () {
-       
         $(this).addClass('-this').siblings().removeClass('-this');
-        
         
     });
     

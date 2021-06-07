@@ -71,7 +71,7 @@ header ul li{
 }
 
 nav>img{
-    width: 120px;
+    width: 70px;
     display: block;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -358,7 +358,7 @@ h2{
     }
     nav>img{
         position: absolute;
-        top: 20px;
+        top: 30px;
         left: 20px;
         width: 60px;
 
