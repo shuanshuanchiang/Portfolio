@@ -253,10 +253,11 @@ var inner_txt =[
         h2:'Kotex | TheBodyShop聯名包裝',
         date:'2019.07',
         tit:'靠得住ＸTheBodyShop聯名 | 包裝設計、廣吿banner、立體圖',
-        count:2,
+        count:3,
         image:[
             "./img/project_014_1.jpg",
-            "./img/project_014_2.jpg"
+            "./img/project_014_2.jpg",
+            "./img/project_014_3.jpg",
         ],
     },
     {
