@@ -66,12 +66,13 @@ var inner_txt =[
         h2:'Kotex | 輕柔棉聯名包裝',
         date:'2019.09',
         tit:'靠得住Ｘ宇宙人聯名 | 主視覺、包裝設計、棉片袋設計、贈品設計、立體圖',
-        count:4,
+        count:5,
         image:[
             "./img/project_01_1.jpg",
             "./img/project_01_2.jpg",
             "./img/project_01_3.jpg",
-            "./img/project_01_4.jpg"
+            "./img/project_01_4.jpg",
+            "./img/project_01_5.jpg"
         ],
     },
     {
@@ -266,9 +267,10 @@ var inner_txt =[
         h2:'Huggies | LINE聯名禮物箱',
         date:'2020.05',
         tit:'好奇ＸLINE | 包裝設計、廣吿banner、立體圖',
-        count:1,
+        count:2,
         image:[
-            "./img/project_015_1.jpg"
+            "./img/project_015_1.jpg",
+            "./img/project_015_2.jpg"
         ],
     },
     {
@@ -331,6 +333,23 @@ var inner_txt =[
         image:[
             "./img/project_022_1.jpg",
             "./img/project_022_2.jpg",
+        ],
+    },
+    {
+        tag:1,
+        mark:'package design',
+        h2:'創作系列',
+        date:'2016.6',
+        tit:'創作系列 | LOGO、包裝設計、插畫 | <a href="https://www.opds.tw/muji_2017Xmas/" style="color: cornflowerblue;"> 前往網站</a>',
+        count:7,
+        image:[
+            "./img/project_025_1.jpg",
+            "./img/project_025_2.jpg",
+            "./img/project_025_3.jpg",
+            "./img/project_025_4.jpg",
+            "./img/project_025_5.jpg",
+            "./img/project_025_6.jpg",
+            "./img/project_025_7.jpg",
         ],
     },
 ];
