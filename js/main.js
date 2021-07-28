@@ -270,7 +270,7 @@ var inner_txt =[
         count:2,
         image:[
             "./img/project_015_1.jpg",
-            "./img/project_015_2.jpg"
+            
         ],
     },
     {
