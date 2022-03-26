@@ -37,6 +37,20 @@ var inner_txt =[
     {
         tag:2,
         mark:'web design',
+        h2:'扶輪職業服務網 | 網站設計',
+        date:'2020.12',
+        tit:'扶輪職業服務網 | 網站規劃、活動海報、EDM | <a href="https://www.kingspread.com.tw/Rotary/" style="color: cornflowerblue;"> 前往網站</a>',
+        count:4,
+        image:[
+            "./img/project_026_1.jpg",
+            "./img/project_026_2.jpg",
+            "./img/project_026_3.jpg",
+            "./img/project_026_4.jpg",
+        ],
+    },
+    {
+        tag:2,
+        mark:'web design',
         h2:'個人網站 | TOAST bakery網頁設計',
         date:'2020.12',
         tit:'TOAST bakery | LOGO、網站視覺、全頁面 | <a href="http://www.nrs77.com/do/toast/" style="color: cornflowerblue;"> 前往網站</a>',
@@ -267,10 +281,11 @@ var inner_txt =[
         h2:'Huggies | LINE聯名禮物箱',
         date:'2020.05',
         tit:'好奇ＸLINE | 包裝設計、廣吿banner、立體圖',
-        count:2,
+        count:3,
         image:[
             "./img/project_015_1.jpg",
-            
+            "./img/project_015_2.jpg",
+            "./img/project_015_3.jpg"
         ],
     },
     {
