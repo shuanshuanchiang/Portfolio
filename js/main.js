@@ -46,6 +46,7 @@ var inner_txt =[
             "./img/project_026_2.jpg",
             "./img/project_026_3.jpg",
             "./img/project_026_4.jpg",
+            "./img/project_026_5.jpg",
         ],
     },
     {
