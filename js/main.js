@@ -302,8 +302,8 @@ var inner_txt =[
         ],
     },
     {
-        tag:2,
-        mark:'web design',
+        tag:1,
+        mark:'package design',
         h2:'Kleenex | 迪士尼X全聯限定包裝',
         date:'2020.02',
         tit:'舒潔Ｘ迪士尼X全聯 聯名包裝 | 包裝設計、立體圖',
