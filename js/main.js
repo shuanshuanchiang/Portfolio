@@ -40,7 +40,7 @@ var inner_txt =[
         h2:'扶輪職業服務網 | 網站設計',
         date:'2020.12',
         tit:'扶輪職業服務網 | 網站規劃、活動海報、EDM | <a href="https://www.kingspread.com.tw/Rotary/" style="color: cornflowerblue;"> 前往網站</a>',
-        count:4,
+        count:5,
         image:[
             "./img/project_026_1.jpg",
             "./img/project_026_2.jpg",
