@@ -54,7 +54,7 @@ var inner_txt =[
         mark:'web design',
         h2:'個人網站 | TOAST bakery網頁設計',
         date:'2020.12',
-        tit:'TOAST bakery | LOGO、網站視覺、全頁面 | <a href="http://www.nrs77.com/do/toast/" style="color: cornflowerblue;"> 前往網站</a>',
+        tit:'TOAST bakery | LOGO、網站視覺、全頁面 | <a href="http://nrs77.com/do/test/" style="color: cornflowerblue;"> 前往網站</a>',
         count:1,
         image:[
             "./img/project_020_1.jpg",
