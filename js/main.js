@@ -35,6 +35,44 @@ var Filter = 0;
 
 var inner_txt =[
     {
+        tag:1,
+        mark:'visual design',
+        h2:'台灣國際觀光產業發展協會 | LOGO設計',
+        date:'2022.5',
+        tit:'台灣國際觀光產業發展協會 | LOGO、名片',
+        count:3,
+        image:[
+            "./img/project_029_1.jpg",
+            "./img/project_029_2.jpg",
+            "./img/project_029_3.jpg",
+        ],
+    },
+    {
+        tag:2,
+        mark:'web design',
+        h2:'好客民宿 | 網站、視覺設計',
+        date:'2022.4',
+        tit:'好客民宿 | 主視覺、網站規劃、海報',
+        count:3,
+        image:[
+            "./img/project_028_1.jpg",
+            "./img/project_028_2.jpg",
+            "./img/project_028_3.jpg",
+        ],
+    },
+    {
+        tag:1,
+        mark:'visual design',
+        h2:'滬動新屋 | 視覺.展場規劃',
+        date:'2022.4',
+        tit:'滬動新屋 | 主視覺、展場製作物',
+        count:2,
+        image:[
+            "./img/project_027_1.jpg",
+            "./img/project_027_2.jpg",
+        ],
+    },
+    {
         tag:2,
         mark:'web design',
         h2:'扶輪職業服務網 | 網站設計',
