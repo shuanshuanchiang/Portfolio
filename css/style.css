@@ -380,7 +380,7 @@ h2{
 
     .container{
         margin: 0 auto;
-        width: 90%;
+        width: 100%;
     }
 
     .item {
@@ -400,6 +400,7 @@ h2{
     
     .back,.gotop{
         left: 85%;
+        bottom: 15vh;
     }
     
     
