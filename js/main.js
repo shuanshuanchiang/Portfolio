@@ -35,6 +35,17 @@ var Filter = 0;
 
 var inner_txt =[
     {
+        tag:2,
+        mark:'web design',
+        h2:'作品示意',
+        date:'2024.5',
+        tit:'<a href="https://renovation.muji.tw/" target="_blank"  style="color: cornflowerblue;"> MUJI空間改造</a> <br> <a href="https://www.books.com.tw/activity/fashion/muji/2023/labo/23ss/" target="_blank" style="color: cornflowerblue;"> MUJI LABO</a> <br> <a href="https://www.books.com.tw/activity/fashion/muji/2023/feature/mujiwalker/" target="_blank" style="color: cornflowerblue;"> MUJI Walker</a> <br> <a href="http://www.nrs77.com/mumu/bk2020/meal/index.html" target="_blank" style="color: cornflowerblue;"> MUJI 食譜</a> <br> <a href="https://www.books.com.tw/activity/fashion/muji/2023/feature/mujiwalker/" target="_blank" style="color: cornflowerblue;"> MUJI Walker</a> <br> <a href="https://www.books.com.tw/activity/fashion/muji/2022/feature/laundry/" target="_blank" style="color: cornflowerblue;"> MUJI 衣架</a> <br> <a href="https://www.opds.tw/muji_2017Xmas/" target="_blank" style="color: cornflowerblue;"> MUJI 聖誕節企劃</a> <br> <a href="http://nrs77.com/do/testxx/main.html" target="_blank" style="color: cornflowerblue;"> 多肉特效</a> ',
+        count:1,
+        image:[
+            "./img/project_030.jpg",
+        ],
+    },
+    {
         tag:1,
         mark:'visual design',
         h2:'台灣國際觀光產業發展協會 | LOGO設計',
