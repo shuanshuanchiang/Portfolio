@@ -88,7 +88,7 @@ var inner_txt =[
         mark:'web design',
         h2:'扶輪職業服務網 | 網站設計',
         date:'2020.12',
-        tit:'扶輪職業服務網 | 網站規劃、活動海報、EDM | <a href="https://www.kingspread.com.tw/Rotary/" style="color: cornflowerblue;"> 前往網站</a>',
+        tit:'扶輪職業服務網 | 網站規劃、活動海報、EDM | <a href="https://www.kingspread.com.tw/Rotary/" target="_blank" style="color: cornflowerblue;"> 前往網站</a>',
         count:5,
         image:[
             "./img/project_026_1.jpg",
@@ -103,7 +103,7 @@ var inner_txt =[
         mark:'web design',
         h2:'個人網站 | TOAST bakery網頁設計',
         date:'2020.12',
-        tit:'TOAST bakery | LOGO、網站視覺、全頁面 | <a href="https://shuanshuanchiang.github.io/Toast/" style="color: cornflowerblue;"> 前往網站</a>',
+        tit:'TOAST bakery | LOGO、網站視覺、全頁面 | <a href="https://shuanshuanchiang.github.io/Toast/" target="_blank" style="color: cornflowerblue;"> 前往網站</a>',
         count:1,
         image:[
             "./img/project_020_1.jpg",
@@ -114,7 +114,7 @@ var inner_txt =[
         mark:'web design',
         h2:'團體網站 | 肉多不怪電商網站',
         date:'2021.3',
-        tit:'肉多不怪 | LOGO、網站視覺、首頁、QA、客製頁面、心理測驗、動畫特效 | <a href="https://shuanshuanchiang.github.io/SucculentPlant/main.html" style="color: cornflowerblue;"> 前往網站</a>',
+        tit:'肉多不怪 | LOGO、網站視覺、首頁、QA、客製頁面、心理測驗、動畫特效 | <a href="https://shuanshuanchiang.github.io/SucculentPlant/main.html" target="_blank" style="color: cornflowerblue;"> 前往網站</a>',
         count:5,
         image:[
             "./img/project_021_1.jpg",
@@ -170,7 +170,7 @@ var inner_txt =[
         mark:'web design',
         h2:'MUJI無印良品 | 木製沙發特企',
         date:'2021.3',
-        tit:'MUJI無印良品 | 網頁設計 | <a href="https://www.books.com.tw/activity/fashion/muji/2021/05/e-3/" style="color: cornflowerblue;"> 前往網站</a>',
+        tit:'MUJI無印良品 | 網頁設計 | <a href="https://www.books.com.tw/activity/fashion/muji/2021/05/e-3/" target="_blank" style="color: cornflowerblue;"> 前往網站</a>',
         count:1,
         image:[
             "./img/project_024_1.jpg",
