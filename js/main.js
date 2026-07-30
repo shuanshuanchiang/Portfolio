@@ -34,15 +34,123 @@ var PreCount = 0;
 var Filter = 0;
 
 var inner_txt =[
+    // {
+    //     tag:2,
+    //     mark:'UI/UX',
+    //     h2:'作品示意',
+    //     date:'2024.5',
+    //     tit:'<a href="https://renovation.muji.tw/" target="_blank"  style="color: cornflowerblue;"> MUJI空間改造</a> <br> <a href="https://www.books.com.tw/activity/fashion/muji/2023/labo/23ss/" target="_blank" style="color: cornflowerblue;"> MUJI LABO</a> <br> <a href="https://www.books.com.tw/activity/fashion/muji/2023/feature/mujiwalker/" target="_blank" style="color: cornflowerblue;"> MUJI Walker</a> <br> <a href="http://www.nrs77.com/mumu/bk2020/meal/index.html" target="_blank" style="color: cornflowerblue;"> MUJI 食譜</a> <br> <a href="https://www.books.com.tw/activity/fashion/muji/2023/feature/mujiwalker/" target="_blank" style="color: cornflowerblue;"> MUJI Walker</a> <br> <a href="https://www.books.com.tw/activity/fashion/muji/2022/feature/laundry/" target="_blank" style="color: cornflowerblue;"> MUJI 衣架</a> <br> <a href="https://www.opds.tw/muji_2017Xmas/" target="_blank" style="color: cornflowerblue;"> MUJI 聖誕節企劃</a> <br> <a href="https://shuanshuanchiang.github.io/SucculentPlant/main.html" target="_blank" style="color: cornflowerblue;"> 多肉特效</a> ',
+    //     count:1,
+    //     image:[
+    //         "./img/project_030.jpg",
+    //     ],
+    // },
     {
         tag:2,
-        mark:'web design',
-        h2:'作品示意',
-        date:'2024.5',
-        tit:'<a href="https://renovation.muji.tw/" target="_blank"  style="color: cornflowerblue;"> MUJI空間改造</a> <br> <a href="https://www.books.com.tw/activity/fashion/muji/2023/labo/23ss/" target="_blank" style="color: cornflowerblue;"> MUJI LABO</a> <br> <a href="https://www.books.com.tw/activity/fashion/muji/2023/feature/mujiwalker/" target="_blank" style="color: cornflowerblue;"> MUJI Walker</a> <br> <a href="http://www.nrs77.com/mumu/bk2020/meal/index.html" target="_blank" style="color: cornflowerblue;"> MUJI 食譜</a> <br> <a href="https://www.books.com.tw/activity/fashion/muji/2023/feature/mujiwalker/" target="_blank" style="color: cornflowerblue;"> MUJI Walker</a> <br> <a href="https://www.books.com.tw/activity/fashion/muji/2022/feature/laundry/" target="_blank" style="color: cornflowerblue;"> MUJI 衣架</a> <br> <a href="https://www.opds.tw/muji_2017Xmas/" target="_blank" style="color: cornflowerblue;"> MUJI 聖誕節企劃</a> <br> <a href="https://shuanshuanchiang.github.io/SucculentPlant/main.html" target="_blank" style="color: cornflowerblue;"> 多肉特效</a> ',
-        count:1,
+        mark:'UI/UX',
+        h2:'PX Pay | 多樣化首頁',
+        date:'2026.2',
+        tit:'個人化首頁服務(標準版/放大版/電商版) | 介面規劃、流程設計',
+        count:2,
         image:[
-            "./img/project_030.jpg",
+            "./img/project_037_1.png",
+            "./img/project_037_2.png",
+        ],
+    },
+    {
+        tag:2,
+        mark:'UI/UX',
+        h2:'好好吃改版 | 介面改版整合AI功能',
+        date:'2025.5',
+        tit:'首頁模組化、串流短影音、加入AI服務 | 介面規劃、流程設計',
+        count:2,
+        image:[
+            "./img/project_032_1.png",
+            "./img/project_032_2.png",
+        ],
+    },
+    {
+        tag:2,
+        mark:'UI/UX',
+        h2:'小時達 | 天降紅包雨',
+        date:'2025.1',
+        tit:'檔期宣傳活動 | 介面規劃',
+        count:2,
+        image:[
+            "./img/project_038_1.png",
+            "./img/project_038_2.png",
+        ],
+    },
+    {
+        tag:2,
+        mark:'UI/UX',
+        h2:'PX Pay | 專屬任務',
+        date:'2024.8',
+        tit:'福利任務、突襲任務 | 介面規劃、流程設計',
+        count:2,
+        image:[
+            "./img/project_036_1.png",
+            "./img/project_036_2.png",
+        ],
+    },
+    {
+        tag:2,
+        mark:'UI/UX',
+        h2:'PX Pay | 交易/紀錄/支付介面流程重構',
+        date:'2024.8',
+        tit:'線上線下交易界面、支付流程重構 | 介面規劃、流程設計',
+        count:2,
+        image:[
+            "./img/project_035_1.png",
+            "./img/project_035_2.png",
+        ],
+    },
+    {
+        tag:2,
+        mark:'UI/UX',
+        h2:'PX Pay | 找地圖',
+        date:'2024.4',
+        tit:'地圖集合、惜食、門市、換購、防疫 | 介面規劃、流程設計',
+        count:2,
+        image:[
+            "./img/project_034_1.png",
+            "./img/project_034_2.png",
+        ],
+    },
+    {
+        tag:2,
+        mark:'UI/UX',
+        h2:'小時達 | 購物系統與促銷模組',
+        date:'2023.1',
+        tit:'小時達購物/支付流程、多樣促銷模組規劃 | 介面規劃、流程設計',
+        count:2,
+        image:[
+            "./img/project_039_1.png",
+            "./img/project_039_2.png",
+        ],
+    },
+    {
+        tag:2,
+        mark:'UI/UX',
+        h2:'吃什麼/用什麼 | 網站設計',
+        date:'2023.1',
+        tit:'食譜/生活APP，串流影音以及購物流程 | 介面規劃、流程設計',
+        count:2,
+        image:[
+            "./img/project_033_1.png",
+            "./img/project_033_2.png",
+        ],
+    },
+    {
+        tag:2,
+        mark:'UI/UX',
+        h2:'吃什麼/用什麼 | APP設計',
+        date:'2023.1',
+        tit:'食譜/生活APP，串流影音以及購物流程 | 介面規劃、流程設計',
+        count:2,
+        image:[
+            "./img/project_031_1.png",
+            "./img/project_031_2.png",
         ],
     },
     {
@@ -60,7 +168,7 @@ var inner_txt =[
     },
     {
         tag:2,
-        mark:'web design',
+        mark:'UI/UX',
         h2:'好客民宿 | 網站、視覺設計',
         date:'2022.4',
         tit:'好客民宿 | 主視覺、網站規劃、海報',
@@ -85,7 +193,7 @@ var inner_txt =[
     },
     {
         tag:2,
-        mark:'web design',
+        mark:'UI/UX',
         h2:'扶輪職業服務網 | 網站設計',
         date:'2020.12',
         tit:'扶輪職業服務網 | 網站規劃、活動海報、EDM | <a href="https://www.kingspread.com.tw/Rotary/" target="_blank" style="color: cornflowerblue;"> 前往網站</a>',
@@ -100,7 +208,7 @@ var inner_txt =[
     },
     {
         tag:2,
-        mark:'web design',
+        mark:'UI/UX',
         h2:'個人網站 | TOAST bakery網頁設計',
         date:'2020.12',
         tit:'TOAST bakery | LOGO、網站視覺、全頁面 | <a href="https://shuanshuanchiang.github.io/Toast/" target="_blank" style="color: cornflowerblue;"> 前往網站</a>',
@@ -111,7 +219,7 @@ var inner_txt =[
     },
     {
         tag:2,
-        mark:'web design',
+        mark:'UI/UX',
         h2:'團體網站 | 肉多不怪電商網站',
         date:'2021.3',
         tit:'肉多不怪 | LOGO、網站視覺、首頁、QA、客製頁面、心理測驗、動畫特效 | <a href="https://shuanshuanchiang.github.io/SucculentPlant/main.html" target="_blank" style="color: cornflowerblue;"> 前往網站</a>',
@@ -167,7 +275,7 @@ var inner_txt =[
     },
     {
         tag:2,
-        mark:'web design',
+        mark:'UI/UX',
         h2:'MUJI無印良品 | 木製沙發特企',
         date:'2021.3',
         tit:'MUJI無印良品 | 網頁設計 | <a href="https://www.books.com.tw/activity/fashion/muji/2021/05/e-3/" target="_blank" style="color: cornflowerblue;"> 前往網站</a>',
@@ -204,7 +312,7 @@ var inner_txt =[
     },
     {
         tag:2,
-        mark:'web design',
+        mark:'UI/UX',
         h2:'Huggies | 大樹旗艦店網頁設計',
         date:'2020.03',
         tit:'好奇Ｘ大樹網站視覺設計 | 主視覺、網頁UI/UX、廣告Banner',
@@ -231,7 +339,7 @@ var inner_txt =[
     },
     {
         tag:2,
-        mark:'web design',
+        mark:'UI/UX',
         h2:'Kleenex | 兒童衛生紙系列EDM',
         date:'2020.05',
         tit:'舒潔Ｘ迪士尼聯名兒童衛生紙系列EDM | 海報設計、EDM設計',
@@ -266,7 +374,7 @@ var inner_txt =[
     },
     {
         tag:2,
-        mark:'web design',
+        mark:'UI/UX',
         h2:'Kotex | 舒潔夏日EDM',
         date:'2019.08',
         tit:'靠得住Ｘ夏日EDM | 主視覺設計、EDM設計、廣告banner',
@@ -279,7 +387,7 @@ var inner_txt =[
     },
     {
         tag:2,
-        mark:'web design',
+        mark:'UI/UX',
         h2:'Huggies | PChome旗艦店網頁設計',
         date:'2020.06',
         tit:'好奇ＸPChome旗艦店 | 網頁設計、廣告banner',
@@ -340,7 +448,7 @@ var inner_txt =[
     },
     {
         tag:2,
-        mark:'web design',
+        mark:'UI/UX',
         h2:'博士倫 | LACELLA網頁設計',
         date:'2019.02',
         tit:'博士倫ＸLACELLA | 網頁設計、網站維護',
@@ -364,7 +472,7 @@ var inner_txt =[
     },
     {
         tag:2,
-        mark:'web design',
+        mark:'UI/UX',
         h2:'Kleenex | 新年企劃EDM',
         date:'2018.09',
         tit:'舒潔Ｘ新年企劃 | 主視覺設計、EDM設計',
