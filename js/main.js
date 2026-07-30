@@ -16,7 +16,7 @@ $(document).ready(function () {
         $('.inner').removeClass('fade-leave-to').addClass('fade-enter-to');
     });
 
-    $('.back').click(function () { 
+    $('.back,.filters_btn li').click(function () { 
         $('.inner').removeClass('fade-enter-to').addClass('fade-leave-to');
     });
 
@@ -60,7 +60,7 @@ var inner_txt =[
     {
         tag:2,
         mark:'UI/UX',
-        h2:'好好吃改版 | 介面改版整合AI功能',
+        h2:'好好吃 | 介面改版整合AI功能',
         date:'2025.5',
         tit:'首頁模組化、串流短影音、加入AI服務 | 介面規劃、流程設計',
         count:2,
@@ -72,13 +72,13 @@ var inner_txt =[
     {
         tag:2,
         mark:'UI/UX',
-        h2:'小時達 | 天降紅包雨',
+        h2:'PX Pay | 交易/紀錄/支付介面流程重構',
         date:'2025.1',
-        tit:'檔期宣傳活動 | 介面規劃',
+        tit:'線上線下交易界面、支付流程重構 | 介面規劃、流程設計',
         count:2,
         image:[
-            "./img/project_038_1.png",
-            "./img/project_038_2.png",
+            "./img/project_035_1.png",
+            "./img/project_035_2.png",
         ],
     },
     {
@@ -93,18 +93,18 @@ var inner_txt =[
             "./img/project_036_2.png",
         ],
     },
-    {
-        tag:2,
-        mark:'UI/UX',
-        h2:'PX Pay | 交易/紀錄/支付介面流程重構',
-        date:'2024.8',
-        tit:'線上線下交易界面、支付流程重構 | 介面規劃、流程設計',
-        count:2,
-        image:[
-            "./img/project_035_1.png",
-            "./img/project_035_2.png",
-        ],
-    },
+    // {
+    //     tag:2,
+    //     mark:'UI/UX',
+    //     h2:'小時達 | 天降紅包雨',
+    //     date:'2024.5',
+    //     tit:'檔期宣傳活動 | 介面規劃',
+    //     count:2,
+    //     image:[
+    //         "./img/project_038_1.png",
+    //         "./img/project_038_2.png",
+    //     ],
+    // },
     {
         tag:2,
         mark:'UI/UX',
@@ -132,7 +132,7 @@ var inner_txt =[
     {
         tag:2,
         mark:'UI/UX',
-        h2:'吃什麼/用什麼 | 網站設計',
+        h2:'吃什麼/用什麼 | 食譜生活網站',
         date:'2023.1',
         tit:'食譜/生活APP，串流影音以及購物流程 | 介面規劃、流程設計',
         count:2,
@@ -144,13 +144,26 @@ var inner_txt =[
     {
         tag:2,
         mark:'UI/UX',
-        h2:'吃什麼/用什麼 | APP設計',
+        h2:'吃什麼/用什麼 | 食譜生活APP',
         date:'2023.1',
         tit:'食譜/生活APP，串流影音以及購物流程 | 介面規劃、流程設計',
         count:2,
         image:[
             "./img/project_031_1.png",
             "./img/project_031_2.png",
+        ],
+    },
+    {
+        tag:1,
+        mark:'visual design',
+        h2:'屏東聽旅行 | LOGO.視覺.展場規劃',
+        date:'2022.9',
+        tit:'屏東縣政府Ｘ觀光局 | 主視覺、LOGO、展場製作物、手冊',
+        count:3,
+        image:[
+            "./img/project_040_1.png",
+            "./img/project_040_2.png",
+            "./img/project_040_3.png",
         ],
     },
     {
@@ -212,9 +225,10 @@ var inner_txt =[
         h2:'個人網站 | TOAST bakery網頁設計',
         date:'2020.12',
         tit:'TOAST bakery | LOGO、網站視覺、全頁面 | <a href="https://shuanshuanchiang.github.io/Toast/" target="_blank" style="color: cornflowerblue;"> 前往網站</a>',
-        count:1,
+        count:2,
         image:[
             "./img/project_020_1.jpg",
+            "./img/project_020_2.jpg",
         ],
     },
     {
