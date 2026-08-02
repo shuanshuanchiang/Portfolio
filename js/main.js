@@ -72,7 +72,7 @@ var inner_txt =[
     {
         tag:2,
         mark:'UI/UX',
-        h2:'PX Pay | 交易/紀錄/支付介面流程重構',
+        h2:'PX Pay | 交易流程、介面重構',
         date:'2025.1',
         tit:'線上線下交易界面、支付流程重構 | 介面規劃、流程設計',
         count:2,
@@ -202,6 +202,17 @@ var inner_txt =[
         image:[
             "./img/project_027_1.jpg",
             "./img/project_027_2.jpg",
+        ],
+    },
+    {
+        tag:2,
+        mark:'UI/UX',
+        h2:'MUJI LABO | 網頁設計',
+        date:'2022.12',
+        tit:'MUJI LABO | 網頁設計、切版| <a href="https://www.books.com.tw/activity/fashion/muji/2023/labo/23ss/" target="_blank" style="color: cornflowerblue;"> 前往網站</a>',
+        count:1,
+        image:[
+            "./img/project_041_1.png",
         ],
     },
     {
@@ -485,6 +496,18 @@ var inner_txt =[
         ],
     },
     {
+        tag:1,
+        mark:'package design',
+        h2:'Haagen Dazs | 玩具總動員聯名',
+        date:'2020.02',
+        tit:'Haagen DazsＸ玩具總動員 聯名包裝 | 包裝設計、展場佈置',
+        count:2,
+        image:[
+            "./img/project_043_1.png",
+            "./img/project_043_2.png"
+        ],
+    },
+    {
         tag:2,
         mark:'UI/UX',
         h2:'Kleenex | 新年企劃EDM',
@@ -494,6 +517,17 @@ var inner_txt =[
         image:[
             "./img/project_018_1.jpg",
             "./img/project_018_2.jpg"
+        ],
+    },
+    {
+        tag:2,
+        mark:'UI/UX',
+        h2:'MUJI 聖誕企劃 | 網頁、插畫設計',
+        date:'2017.11',
+        tit:'MUJI 聖誕企劃 | 網頁、插畫設計 <a href="https://www.opds.tw/muji_2017Xmas/" target="_blank" style="color: cornflowerblue;"> 前往網站</a>',
+        count:1,
+        image:[
+            "./img/project_042_1.png",
         ],
     },
     {
