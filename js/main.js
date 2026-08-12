@@ -48,6 +48,30 @@ var inner_txt =[
     {
         tag:2,
         mark:'UI/UX',
+        h2:'吃什麼/用什麼 | 食譜生活APP',
+        date:'2023.1',
+        tit:'食譜/生活APP，串流影音以及購物流程 | 介面規劃、流程設計',
+        count:2,
+        image:[
+            "./img/project_031_1.png",
+            "./img/project_031_2.png",
+        ],
+    },
+    {
+        tag:2,
+        mark:'UI/UX',
+        h2:'吃什麼/用什麼 | 食譜生活網站',
+        date:'2023.1',
+        tit:'食譜/生活APP，串流影音以及購物流程 | 介面規劃、流程設計',
+        count:2,
+        image:[
+            "./img/project_033_1.png",
+            "./img/project_033_2.png",
+        ],
+    },
+    {
+        tag:2,
+        mark:'UI/UX',
         h2:'PX Pay | 多樣化首頁',
         date:'2026.2',
         tit:'個人化首頁服務(標準版/放大版/電商版) | 介面規劃、流程設計',
@@ -55,6 +79,18 @@ var inner_txt =[
         image:[
             "./img/project_037_1.png",
             "./img/project_037_2.png",
+        ],
+    },
+    {
+        tag:2,
+        mark:'UI/UX',
+        h2:'小時達 | 購物系統與促銷模組',
+        date:'2023.1',
+        tit:'小時達購物/支付流程、多樣促銷模組規劃 | 介面規劃、流程設計',
+        count:2,
+        image:[
+            "./img/project_039_1.png",
+            "./img/project_039_2.png",
         ],
     },
     {
@@ -115,42 +151,6 @@ var inner_txt =[
         image:[
             "./img/project_034_1.png",
             "./img/project_034_2.png",
-        ],
-    },
-    {
-        tag:2,
-        mark:'UI/UX',
-        h2:'小時達 | 購物系統與促銷模組',
-        date:'2023.1',
-        tit:'小時達購物/支付流程、多樣促銷模組規劃 | 介面規劃、流程設計',
-        count:2,
-        image:[
-            "./img/project_039_1.png",
-            "./img/project_039_2.png",
-        ],
-    },
-    {
-        tag:2,
-        mark:'UI/UX',
-        h2:'吃什麼/用什麼 | 食譜生活網站',
-        date:'2023.1',
-        tit:'食譜/生活APP，串流影音以及購物流程 | 介面規劃、流程設計',
-        count:2,
-        image:[
-            "./img/project_033_1.png",
-            "./img/project_033_2.png",
-        ],
-    },
-    {
-        tag:2,
-        mark:'UI/UX',
-        h2:'吃什麼/用什麼 | 食譜生活APP',
-        date:'2023.1',
-        tit:'食譜/生活APP，串流影音以及購物流程 | 介面規劃、流程設計',
-        count:2,
-        image:[
-            "./img/project_031_1.png",
-            "./img/project_031_2.png",
         ],
     },
     {
