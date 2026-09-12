@@ -40,7 +40,7 @@ body{
 /* ---- 版型開始 ---- */
 header{
     background: #eeebeb;
-    width: 20%;
+    width: 16%;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -63,6 +63,29 @@ header ol{
     margin: 0 auto;
     text-align:  center;
     align-self: center;
+}
+
+.contact-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    background: #333;
+    color: #fff;
+    transition: background-color .2s ease, color .2s ease;
+}
+
+.contact-button:hover{
+    background: #fff;
+    color: #333;
+}
+
+.contact-button:focus-visible{
+    outline: 2px solid #333;
+    outline-offset: 4px;
 }
 
 header ul li{
@@ -124,34 +147,35 @@ nav>img{
 }
 
 section{
-    width: 80%;
+    width: 84%;
     min-height: 100vh;
     height: auto;
     background: #eeebeb;
     padding-top: 40px;
     /* float: right; */
-    margin-left: 20%;
+    margin-left: 16%;
     margin-right: 0;
+    padding-left: 20px;
 }  
 
-.container{
+.container,.container_grid1{
     margin: 0;
 }
         
-.container:after {
+.container:after,.container_grid1:after {
     content: '';
     display: block;
     clear: both;
 }
 
 .item {
-    width: 400px;
+    width: 420px;
     height: auto;
     float: left;
     max-width: 33.3333%;
     /* background: rgba(255,255,255,.5); */
     border-radius: 5px;
-    padding: 0 10px 20px;
+    padding: 0 8px 16px;
     /* margin-bottom: 20px; */
     /* transition:  .6s; */
     cursor: pointer;
@@ -159,9 +183,9 @@ section{
 
 .item:hover .item__inner{
     background: rgba(255,255,255,1);
-    box-shadow: 0 0 5px #eeebeb;
-    
+    box-shadow: 0 0 5px #eeebeb; 
 }
+
 
 .item__inner{
     transition:  .6s;
@@ -194,8 +218,67 @@ time{
     font-size: 12px;
     color: #666;
 }
+.container_grid1 .item{
+    width: 100%;
+    max-width: 1260px;
+}
+.container_grid1 .item__inner{
+    display: flex;
+    align-items: center;
+}
+.container_grid1 .txtbox{
+    margin:0 2%;
+    width: 100%;
+} 
+.container_grid1 img{
+    width: 50%;
+}
 
-    
+.project-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.project-buttons button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 100%;
+    padding: 10px;
+    border:none;
+    border-radius: 4px;
+    background: transparent;
+    color: #9e9e9e;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color .2s ease, color .2s ease;
+}
+
+.project-buttons button img{
+    display: block;
+    width: 80px;
+    height: auto;
+}
+
+.project-buttons button:hover{
+    /* background: #e5e5e5; */
+    color: #333;
+    outline: 1px solid #e5e5e5;
+}
+
+.project-buttons button[aria-pressed="true"]{
+    background: #eeebeb;
+    color: #333;
+    /* outline: 1px solid #333; */
+}
+
+.project-buttons button:focus-visible{
+    outline: 2px solid #333;
+    outline-offset: 3px;
+}
 
 /* ---- 內頁版型 ---- */
 
@@ -214,15 +297,6 @@ time{
     /* margin-left: 0%;
     width: 100%;
     z-index: 3; */
-}
-
-.fade-enter{
-    /* opacity: 0; */
-  
-}
-
-.fade-enter-active{
-  
 }
 
 .fade-enter-to{
@@ -379,6 +453,7 @@ h2{
         margin: 0;
         height: 100%;
         padding-top: 90px;
+        padding-left: 0px;
     }
 
     .container{
@@ -391,6 +466,17 @@ h2{
         margin: 0 0 20px;
         /* max-width: none; */
         
+    }
+    .container_grid1 .item__inner{
+        display: block;
+    }
+
+    .container_grid1 img{
+        width: 100%;
+    }
+
+    .container_grid1 .txtbox{
+        margin-left: 0;
     }
 
     .item_introduction{

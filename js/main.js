@@ -48,6 +48,7 @@ var inner_txt =[
     {
         tag:2,
         mark:'UI/UX',
+        id:'recipe-app',
         h2:'吃什麼/用什麼 | 食譜生活APP',
         date:'2023.1',
         tit:'食譜/生活APP，串流影音以及購物流程 | 介面規劃、流程設計',
@@ -55,18 +56,6 @@ var inner_txt =[
         image:[
             "./img/project_031_1.png",
             "./img/project_031_2.png",
-        ],
-    },
-    {
-        tag:2,
-        mark:'UI/UX',
-        h2:'吃什麼/用什麼 | 食譜生活網站',
-        date:'2023.1',
-        tit:'食譜/生活APP，串流影音以及購物流程 | 介面規劃、流程設計',
-        count:2,
-        image:[
-            "./img/project_033_1.png",
-            "./img/project_033_2.png",
         ],
     },
     {
@@ -84,25 +73,13 @@ var inner_txt =[
     {
         tag:2,
         mark:'UI/UX',
-        h2:'小時達 | 購物系統與促銷模組',
-        date:'2023.1',
-        tit:'小時達購物/支付流程、多樣促銷模組規劃 | 介面規劃、流程設計',
+        h2:'PX Pay | 千萬會員回饋檔期活動',
+        date:'2023.6',
+        tit:'歡慶PX Pay突破千萬會員優惠回饋 | 介面規劃、流程設計',
         count:2,
         image:[
-            "./img/project_039_1.png",
-            "./img/project_039_2.png",
-        ],
-    },
-    {
-        tag:2,
-        mark:'UI/UX',
-        h2:'好好吃 | 介面改版整合AI功能',
-        date:'2025.5',
-        tit:'首頁模組化、串流短影音、加入AI服務 | 介面規劃、流程設計',
-        count:2,
-        image:[
-            "./img/project_032_1.png",
-            "./img/project_032_2.png",
+            "./img/project_044_1.png",
+            "./img/project_044_2.png",
         ],
     },
     {
@@ -115,6 +92,44 @@ var inner_txt =[
         image:[
             "./img/project_035_1.png",
             "./img/project_035_2.png",
+        ],
+    },
+    {
+        tag:2,
+        mark:'UI/UX',
+        id:'recipe-web',
+        h2:'吃什麼/用什麼 | 食譜生活網站',
+        date:'2023.1',
+        tit:'食譜/生活APP，串流影音以及購物流程 | 介面規劃、流程設計',
+        count:2,
+        image:[
+            "./img/project_033_1.png",
+            "./img/project_033_2.png",
+        ],
+    },
+    {
+        tag:2,
+        mark:'UI/UX',
+        h2:'小時達 | 購物系統與促銷模組',
+        date:'2023.1',
+        tit:'小時達購物/支付流程、多樣促銷模組規劃 | 介面規劃、流程設計',
+        count:2,
+        image:[
+            "./img/project_039_1.png",
+            "./img/project_039_2.png",
+        ],
+    },
+    {
+        tag:2,
+        mark:'UI/UX',
+        id:'good-food-ai',
+        h2:'好好吃 | 介面改版整合AI功能',
+        date:'2025.5',
+        tit:'首頁模組化、串流短影音、加入AI服務 | 介面規劃、流程設計',
+        count:2,
+        image:[
+            "./img/project_032_1.png",
+            "./img/project_032_2.png",
         ],
     },
     {
@@ -685,6 +700,56 @@ function boxclick(inner){
 
 var boxs = document.querySelectorAll('.item');
 for( let i=0 ; i<boxs.length ;i++){
-    boxs[i].addEventListener('click',boxclick(inner_txt[i]),false);
+    boxs[i].addEventListener('click', function () {
+        var project = boxs[i].querySelector('.project-buttons')
+            ? getButtonProject(selectedProjectButton)
+            : inner_txt[i];
+        boxclick(project)();
+    },false);
 };
 
+var projectButtons = document.querySelectorAll('.project-buttons button');
+var selectedProjectButton = document.querySelector('.project-buttons button[aria-pressed="true"]');
+var featuredPreview = document.querySelector('.featured-preview');
+
+function getButtonProject(button) {
+    return inner_txt.find(function (item) {
+        return item.id === button.getAttribute('data-project');
+    });
+}
+
+function previewProject(button) {
+    var project = getButtonProject(button);
+    featuredPreview.src = button.getAttribute('data-preview');
+    featuredPreview.alt = project.h2;
+}
+
+projectButtons.forEach(function (button) {
+    button.addEventListener('mouseenter', function () {
+        previewProject(button);
+    });
+    button.addEventListener('mouseleave', function () {
+        previewProject(selectedProjectButton);
+    });
+    button.addEventListener('focus', function () {
+        previewProject(button);
+    });
+    button.addEventListener('blur', function () {
+        previewProject(selectedProjectButton);
+    });
+
+    button.addEventListener('click', function (event) {
+        event.stopPropagation();
+        var project = getButtonProject(button);
+        if (!project) return;
+
+        selectedProjectButton = button;
+        projectButtons.forEach(function (item) {
+            item.setAttribute('aria-pressed', item === button ? 'true' : 'false');
+        });
+        previewProject(button);
+        boxclick(project)();
+        $('.inner').removeClass('fade-leave-to').addClass('fade-enter-to');
+        document.querySelector('.inner').scrollTop = 0;
+    });
+});

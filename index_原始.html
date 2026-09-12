@@ -34,44 +34,20 @@
         <nav>
             <img src="img/logo.png" alt="" class="logo">
             <ul class="filters_btn">
-                <li id="UIUX" class="-this" data-filter=".UIUX">推薦</li>
-                <li id="All"  data-filter="*">全部</li>
-                <!-- <li id="Package" data-filter=".package">Package</li> -->
+                <li id="All" class="-this" data-filter="*">All</li>
+                <li id="UIUX" data-filter=".UIUX">UI/UX</li>
+                <li id="Package" data-filter=".package">Package</li>
             </ul>
         </nav>
         <ol>
-            <li>
-                <a class="contact-button" href="mailto:shuanyu0424@gmail.com" aria-label="寄信聯絡我：shuanyu0424@gmail.com">
-                    <i class="fas fa-envelope-open" aria-hidden="true"></i>
-                    聯絡我
-                </a>
-            </li>
+            <li><i class="fas fa-envelope-open" style="margin-right: 15px;"></i>shuanyu0424@gmail.com</li>
         </ol>
         <div class="ham"><span></span><span></span><span></span></div>
     </header>
 
     <section class="outer">
-        
-        <div class="container_grid1">
-            <div class="item UIUX" data-category="UIUX">
-                <div class="item__inner">
-                    <img class="featured-preview" src="./img/project_031new.png" alt="吃什麼/用什麼 | 食譜生活APP">
-                    <div class="txtbox">
-                        <mark>UI/UX</mark>
-                        <h1>吃什麼/用什麼 | 食譜生活APP </h1>
-                        <time>2023.1</time>
-                        <div class="project-buttons">
-                            <button type="button" data-project="recipe-app" data-preview="./img/project_031new.png" aria-pressed="true"><img src="./img/project_031new.png" alt="">專案一｜食譜生活APP</button>
-                            <button type="button" data-project="recipe-web" data-preview="./img/project_033.png" aria-pressed="false"><img src="./img/project_033.png" alt="">專案二｜食譜生活網站</button>
-                            <button type="button" data-project="good-food-ai" data-preview="./img/project_032.png" aria-pressed="false"><img src="./img/project_032.png" alt="">專案三｜介面改版＆整合AI功能</button>
-                        </div>
-                    </div>
-                </div>    
-            </div>
-        </div>
-
         <div class="container">
-            <!-- DEMO -->
+
             <!-- <div class="item web" data-category="web">
                 <div class="item__inner">
                     <img src="./img/project_030.jpg" alt="">
@@ -82,39 +58,28 @@
             </div> -->
             <div class="item UIUX" data-category="UIUX">
                 <div class="item__inner">
-                    <img src="./img/project_037.png" alt="">
+                    <img src="./img/project_031.png" alt="">
                     <mark>UI/UX</mark>
-                    <h1>PX Pay | 多樣化首頁 </h1>
-                    <time>2026.2</time>
+                    <h1>吃什麼/用什麼 | 食譜生活APP </h1>
+                    <time>2023.1</time>
                 </div>    
             </div>
 
             <div class="item UIUX" data-category="UIUX">
-                <div class="item__inner">
-                    <img src="./img/project_044.png" alt="">
-                    <mark>UI/UX</mark>
-                    <h1>PX Pay | 千萬會員回饋檔期活動 </h1>
-                    <time>2023.6</time>
-                </div>    
-            </div>
-
-            <div class="item UIUX" data-category="UIUX">
-                <div class="item__inner">
-                    <img src="./img/project_035.png" alt="">
-                    <mark>UI/UX</mark>
-                    <h1>PX Pay | 交易流程、介面重構 </h1>
-                    <time>2025.1</time>
-                </div>    
-            </div> 
-
-            <!-- 此作品改由上方 .txtbox 的「食譜生活網站」按鈕開啟，故隱藏列表卡片。
-                 保留 DOM 節點以維持 main.js 的作品順序對應；移除 hidden 即可恢復顯示。 -->
-            <div class="item UIUX" data-category="UIUX" hidden>
                 <div class="item__inner">
                     <img src="./img/project_033.png" alt="">
                     <mark>UI/UX</mark>
                     <h1>吃什麼/用什麼 | 食譜生活網站 </h1>
                     <time>2023.1</time>
+                </div>    
+            </div>
+
+            <div class="item UIUX" data-category="UIUX">
+                <div class="item__inner">
+                    <img src="./img/project_037.png" alt="">
+                    <mark>UI/UX</mark>
+                    <h1>PX Pay | 多樣化首頁 </h1>
+                    <time>2026.2</time>
                 </div>    
             </div>
 
@@ -127,9 +92,7 @@
                 </div>    
             </div>
 
-            <!-- 此作品改由上方 .txtbox 的「好好吃｜介面改版整合 AI 功能」按鈕開啟，故隱藏列表卡片。
-                 保留 DOM 節點以維持 main.js 的作品順序對應；移除 hidden 即可恢復顯示。 -->
-            <div class="item UIUX" data-category="UIUX" hidden>
+            <div class="item UIUX" data-category="UIUX">
                 <div class="item__inner">
                     <img src="./img/project_032.png" alt="">
                     <mark>UI/UX</mark>
@@ -137,6 +100,15 @@
                     <time>2025.5</time>
                 </div>    
             </div>
+
+            <div class="item UIUX" data-category="UIUX">
+                <div class="item__inner">
+                    <img src="./img/project_035.png" alt="">
+                    <mark>UI/UX</mark>
+                    <h1>PX Pay | 交易流程、介面重構 </h1>
+                    <time>2025.1</time>
+                </div>    
+            </div>        
 
             <div class="item UIUX" data-category="UIUX">
                 <div class="item__inner">
@@ -467,8 +439,7 @@
             $container.imagesLoaded(function () {
 
                 var $isotope = $container.isotope({
-                    // 隱藏的卡片不參與排版與分類篩選，避免切換分類時重新出現。
-                    itemSelector: '.item:not([hidden])',
+                    itemSelector: '.item',
                     layoutMode: 'masonry',
                     percentPosition: true,
                     masonry: {
@@ -479,7 +450,6 @@
                         // horizontalOrrder: true,
                     }
                 });
-                
 
                 $('.filters_btn').on('click', 'li', function () {
                     var filterValue = $(this).attr('data-filter');
