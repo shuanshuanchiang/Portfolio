@@ -43,11 +43,10 @@
             <li>
                 <a class="contact-button" href="mailto:shuanyu0424@gmail.com" aria-label="寄信聯絡我：shuanyu0424@gmail.com">
                     <i class="fas fa-envelope-open" aria-hidden="true"></i>
-                    聯絡我
+                    Mail
                 </a>
             </li>
         </ol>
-        <div class="ham"><span></span><span></span><span></span></div>
     </header>
 
     <section class="outer">
@@ -165,11 +164,6 @@
                 </div>    
             </div>
 
-            
-
-            
-
-            
             <div class="item package" data-category="package">
                 <div class="item__inner">
                     <img src="./img/project_040.png" alt="">
@@ -464,28 +458,25 @@
        
         $(function () {
             var $container = $('.container');
-            $container.imagesLoaded(function () {
+            // 立即套用預設選中的「推薦」，分類切換不必等待圖片載入完成。
+            $container.isotope({
+                itemSelector: '.item:not([hidden])',
+                filter: $('.filters_btn li.-this').attr('data-filter') || '.UIUX',
+                layoutMode: 'masonry',
+                percentPosition: true,
+                masonry: {
+                    columnWidth: '.item'
+                }
+            });
 
-                var $isotope = $container.isotope({
-                    // 隱藏的卡片不參與排版與分類篩選，避免切換分類時重新出現。
-                    itemSelector: '.item:not([hidden])',
-                    layoutMode: 'masonry',
-                    percentPosition: true,
-                    masonry: {
-                        // columnWidth: 380,
-                        columnWidth: '.item',
-                        // gutter: 10,
-                        // isFitWidth: true,
-                        // horizontalOrrder: true,
-                    }
-                });
-                
+            $('.filters_btn').on('click', 'li', function () {
+                $(this).addClass('-this').siblings().removeClass('-this');
+                $container.isotope({ filter: $(this).attr('data-filter') });
+            });
 
-                $('.filters_btn').on('click', 'li', function () {
-                    var filterValue = $(this).attr('data-filter');
-                    // filterValue = filterFns[filterValue] || filterValue;
-                    $isotope.isotope({ filter: filterValue });
-                });
+            // 圖片載入後只更新排版，保留使用者目前選擇的分類。
+            $container.imagesLoaded().progress(function () {
+                $container.isotope('layout');
             });
 
         });

@@ -1,5 +1,44 @@
 $(document).ready(function () {
 
+    var header = document.querySelector('header');
+    var mobileHeader = window.matchMedia('(max-width: 767px)');
+
+    function showHeader() {
+        header.classList.remove('is-scroll-hidden');
+    }
+
+    // 首頁與作品介紹各自捲動；累積 8px 再切換，避免微小位移造成閃動。
+    function watchHeaderScroll(target) {
+        var lastPosition = 0;
+        target.addEventListener('scroll', function () {
+            var maxPosition = target === window
+                ? document.documentElement.scrollHeight - window.innerHeight
+                : target.scrollHeight - target.clientHeight;
+            var position = Math.max(0, Math.min(maxPosition,
+                target === window ? window.pageYOffset : target.scrollTop));
+
+            if (target === window && (projectScrollLock !== null || restoringProjectScroll)) {
+                lastPosition = position;
+                return;
+            }
+
+            if (!mobileHeader.matches || position <= header.offsetHeight) {
+                showHeader();
+                lastPosition = position;
+                return;
+            }
+
+            var difference = position - lastPosition;
+            if (Math.abs(difference) < 8) return;
+            header.classList.toggle('is-scroll-hidden', difference > 0);
+            lastPosition = position;
+        }, { passive: true });
+    }
+
+    watchHeaderScroll(window);
+    watchHeaderScroll(document.querySelector('.inner'));
+    window.addEventListener('resize', showHeader);
+
     $(function() {
         $('.gotop').click(function() {
             $('body,html').animate({
@@ -7,24 +46,12 @@ $(document).ready(function () {
             }, 600);
         })
     });
-    $('.ham').click(function () {
-        $(this).toggleClass('-close');
-        $('header ul').toggleClass('-show');
-    });
-
-    $('.item').click(function () { 
-        $('.inner').removeClass('fade-leave-to').addClass('fade-enter-to');
-    });
 
     $('.back,.filters_btn li').click(function () { 
-        $('.inner').removeClass('fade-enter-to').addClass('fade-leave-to');
+        showHeader();
+        closeProjectView();
     });
 
-    $('.filters_btn li').click(function () {
-        $(this).addClass('-this').siblings().removeClass('-this');
-        
-    });
-    
 });
 
 
@@ -32,6 +59,51 @@ $(document).ready(function () {
 
 var PreCount = 0;
 var Filter = 0;
+
+var projectScrollLock = null;
+var restoringProjectScroll = false;
+
+function openProjectView() {
+    $('body,html').stop();
+    if (projectScrollLock === null) {
+        projectScrollLock = {
+            x: window.pageXOffset,
+            y: window.pageYOffset,
+            bodyStyle: document.body.style.cssText,
+            rootOverflow: document.documentElement.style.overflowY
+        };
+        // 保留桌機捲軸的空間，避免鎖定後作品清單寬度改變。
+        if (window.innerWidth > document.documentElement.clientWidth) {
+            document.documentElement.style.overflowY = 'scroll';
+        }
+        document.body.style.position = 'fixed';
+        document.body.style.top = -projectScrollLock.y + 'px';
+        document.body.style.left = '0';
+        document.body.style.width = '100%';
+    }
+
+    document.querySelector('.inner').scrollTop = 0;
+    document.querySelector('header').classList.remove('is-scroll-hidden');
+    $('.inner').removeClass('fade-leave-to').addClass('fade-enter-to');
+}
+
+function closeProjectView() {
+    $('.inner').removeClass('fade-enter-to').addClass('fade-leave-to');
+    if (projectScrollLock === null) return;
+
+    var saved = projectScrollLock;
+    restoringProjectScroll = true;
+    document.body.style.cssText = saved.bodyStyle;
+    document.documentElement.style.overflowY = saved.rootOverflow;
+    window.scrollTo(saved.x, saved.y);
+    projectScrollLock = null;
+    // 還原清單位置的程式捲動不應觸發手機 header 隱藏。
+    window.requestAnimationFrame(function () {
+        window.requestAnimationFrame(function () {
+            restoringProjectScroll = false;
+        });
+    });
+}
 
 var inner_txt =[
     // {
@@ -695,6 +767,7 @@ function boxclick(inner){
         }
 
         PreCount = inner.count;
+        openProjectView();
     };	
 };
 
@@ -749,7 +822,5 @@ projectButtons.forEach(function (button) {
         });
         previewProject(button);
         boxclick(project)();
-        $('.inner').removeClass('fade-leave-to').addClass('fade-enter-to');
-        document.querySelector('.inner').scrollTop = 0;
     });
 });
