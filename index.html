@@ -79,6 +79,17 @@
                     <time>2026.7</time>
                 </div>    
             </div> -->
+            <!-- 「推薦」時由上方 .txtbox 的「食譜生活APP」按鈕開啟，隱藏此卡片；「全部」時顯示此卡片。
+                 data-featured-card 用於分類切換，保留 DOM 節點以維持 main.js 的作品順序對應。 -->
+            <div class="item UIUX" data-category="UIUX" data-featured-card hidden>
+                <div class="item__inner">
+                    <img src="./img/project_031.png" alt="">
+                    <mark>UI/UX</mark>
+                    <h1>吃什麼/用什麼 | 食譜生活APP </h1>
+                    <time>2023.1</time>
+                </div>    
+            </div>
+
             <div class="item UIUX" data-category="UIUX">
                 <div class="item__inner">
                     <img src="./img/project_037.png" alt="">
@@ -106,9 +117,9 @@
                 </div>    
             </div> 
 
-            <!-- 此作品改由上方 .txtbox 的「食譜生活網站」按鈕開啟，故隱藏列表卡片。
-                 保留 DOM 節點以維持 main.js 的作品順序對應；移除 hidden 即可恢復顯示。 -->
-            <div class="item UIUX" data-category="UIUX" hidden>
+            <!-- 「推薦」時由上方 .txtbox 的「食譜生活網站」按鈕開啟，隱藏此卡片；「全部」時顯示此卡片。
+                 data-featured-card 用於分類切換，保留 DOM 節點以維持 main.js 的作品順序對應。 -->
+            <div class="item UIUX" data-category="UIUX" data-featured-card hidden>
                 <div class="item__inner">
                     <img src="./img/project_033.png" alt="">
                     <mark>UI/UX</mark>
@@ -126,9 +137,9 @@
                 </div>    
             </div>
 
-            <!-- 此作品改由上方 .txtbox 的「好好吃｜介面改版整合 AI 功能」按鈕開啟，故隱藏列表卡片。
-                 保留 DOM 節點以維持 main.js 的作品順序對應；移除 hidden 即可恢復顯示。 -->
-            <div class="item UIUX" data-category="UIUX" hidden>
+            <!-- 「推薦」時由上方 .txtbox 的「好好吃｜介面改版整合 AI 功能」按鈕開啟，隱藏此卡片；「全部」時顯示此卡片。
+                 data-featured-card 用於分類切換，保留 DOM 節點以維持 main.js 的作品順序對應。 -->
+            <div class="item UIUX" data-category="UIUX" data-featured-card hidden>
                 <div class="item__inner">
                     <img src="./img/project_032.png" alt="">
                     <mark>UI/UX</mark>
@@ -458,20 +469,31 @@
        
         $(function () {
             var $container = $('.container');
+            function updateFeaturedCards(filterValue) {
+                var showAll = filterValue === '*';
+                $('.container_grid1').prop('hidden', showAll);
+                $container.find('[data-featured-card]').prop('hidden', !showAll);
+            }
+
+            var initialFilter = $('.filters_btn li.-this').attr('data-filter') || '.UIUX';
+            updateFeaturedCards(initialFilter);
             // 立即套用預設選中的「推薦」，分類切換不必等待圖片載入完成。
             $container.isotope({
                 itemSelector: '.item:not([hidden])',
-                filter: $('.filters_btn li.-this').attr('data-filter') || '.UIUX',
+                filter: initialFilter,
                 layoutMode: 'masonry',
                 percentPosition: true,
                 masonry: {
-                    columnWidth: '.item'
+                    columnWidth: '.item:not([hidden])'
                 }
             });
 
             $('.filters_btn').on('click', 'li', function () {
                 $(this).addClass('-this').siblings().removeClass('-this');
-                $container.isotope({ filter: $(this).attr('data-filter') });
+                var filterValue = $(this).attr('data-filter');
+                updateFeaturedCards(filterValue);
+                $container.isotope('reloadItems');
+                $container.isotope({ filter: filterValue });
             });
 
             // 圖片載入後只更新排版，保留使用者目前選擇的分類。

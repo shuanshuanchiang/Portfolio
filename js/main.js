@@ -771,15 +771,17 @@ function boxclick(inner){
     };	
 };
 
-var boxs = document.querySelectorAll('.item');
+// 列表（含隱藏卡片）依序對應作品資料，主打卡片另外綁定。
+var boxs = document.querySelectorAll('.container .item');
 for( let i=0 ; i<boxs.length ;i++){
     boxs[i].addEventListener('click', function () {
-        var project = boxs[i].querySelector('.project-buttons')
-            ? getButtonProject(selectedProjectButton)
-            : inner_txt[i];
-        boxclick(project)();
+        boxclick(inner_txt[i])();
     },false);
 };
+
+document.querySelector('.container_grid1 .item').addEventListener('click', function () {
+    boxclick(getButtonProject(selectedProjectButton))();
+});
 
 var projectButtons = document.querySelectorAll('.project-buttons button');
 var selectedProjectButton = document.querySelector('.project-buttons button[aria-pressed="true"]');
