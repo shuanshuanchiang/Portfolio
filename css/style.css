@@ -118,6 +118,9 @@ section{
     padding-left: 20px;
 }  
 
+/* 將清單內的遮罩層級限制在清單，避免蓋住作品內頁。 */
+.outer{isolation: isolate;}
+
 .container,.container_grid1{
     margin: 0;
 }
@@ -149,11 +152,43 @@ section{
 
 
 .item__inner{
+    position: relative;
     transition:  .3s;
     background: rgba(255,255,255,.5);
     border-radius: 16px;
     padding: 16px;
 }
+
+.map-more-overlay{
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    border-radius: inherit;
+    background: rgba(51, 51, 51, .6);
+    color: #fff;
+    font: inherit;
+    font-size: 32px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+.map-more-overlay span{
+    font-size: 20px;
+    padding: 8px 24px 12px;
+    border-radius: 999px;
+    background: transparent;
+    transition: background-color .2s ease;
+}
+.map-more-overlay:hover{background: transparent;}
+.map-more-overlay:hover span{background: #333333; color: #fff;}
+.map-more-overlay[hidden]{display: none;}
+.map-more-overlay:focus-visible{outline: 3px solid #fff; outline-offset: -8px;}
 
 img{
     width: 100%;
@@ -244,11 +279,11 @@ time{
 }
 
 /* ---- 內頁版型 ---- */
-
 .inner{
     /* display: none; */
     background: #fff;
     position: fixed;
+    z-index: 1;
     height: 100%;
     overflow: auto;
     overscroll-behavior: contain;

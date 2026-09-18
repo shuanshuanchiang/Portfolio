@@ -775,6 +775,7 @@ function boxclick(inner){
 var boxs = document.querySelectorAll('.container .item');
 for( let i=0 ; i<boxs.length ;i++){
     boxs[i].addEventListener('click', function () {
+        if (this.classList.contains('is-more-gate')) return;
         boxclick(inner_txt[i])();
     },false);
 };
